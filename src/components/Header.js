@@ -1,24 +1,20 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avatar.jpg'
+import avatar from '../assets/images/ART-logo1.png'
 
 const Header = () => (
   <header id="header">
     <div className="inner">
       <a href="#" className="image avatar">
-        <img src={avatar} alt="" />
+        <img src={avatar} alt="Alex Raymond Travels" />
       </a>
       <h1>
-        <strong>I am Strata</strong>, a super simple
-        <br />
-        responsive site template freebie
-        <br />
-        crafted by <a href="http://html5up.net">HTML5 UP</a>.
+        <strong>The art of discovery ...</strong>
       </h1>
     </div>
     <Footer />
   </header>
 )
 
-export default Header
+export default Header;

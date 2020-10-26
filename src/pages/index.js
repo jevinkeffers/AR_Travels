@@ -1,12 +1,12 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-
-import Gallery from '../components/Gallery'
-import Layout from '../components/layout'
+import React from 'react';
+import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
+import Gallery from '../components/Gallery';
+import Layout from '../components/layout';
 
 const HomeIndex = () => {
-  const siteTitle = 'Gatsby Starter - Strata'
-  const siteDescription = 'Site description'
+  const siteTitle = 'Alex Raymond Travels';
+  const siteDescription = 'Travel agency Atlanta — Alex Raymond Travels'
 
   return (
     <Layout>
@@ -19,9 +19,7 @@ const HomeIndex = () => {
         <section id="one">
           <header className="major">
             <h2>
-              Ipsum lorem dolor aliquam ante commodo
-              <br />
-              magna sed accumsan arcu neque.
+            Guiding the globally curious with curated itineraries and bespoke experiences.
             </h2>
           </header>
           <p>
@@ -30,37 +28,35 @@ const HomeIndex = () => {
             lobortis tortor primis integer massa adipiscing id nisi accumsan
             pellentesque commodo blandit enim arcu non at amet id arcu magna.
             Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate
-            lorem neque cubilia.
+            lorem neque cubilia
           </p>
           <ul className="actions">
             <li>
-              <a href="#" className="button">
-                Learn More
-              </a>
+              <Link to="/contact" className="button">
+                Start planning now!
+              </Link>
             </li>
           </ul>
         </section>
 
         <section id="two">
-          <h2>Recent Work</h2>
+          <h2>From Alex's Newsletter</h2>
 
           <Gallery />
 
           <ul className="actions">
             <li>
-              <a href="#" className="button">
-                Full Portfolio
-              </a>
+              <Link to="/blog" className="button">
+                Read more
+              </Link>
             </li>
           </ul>
         </section>
 
         <section id="three">
-          <h2>Get In Touch</h2>
+          <h2>Get In Touch!</h2>
           <p>
-            Accumsan pellentesque commodo blandit enim arcu non at amet id arcu
-            magna. Accumsan orci faucibus id eu lorem semper nunc nisi lorem
-            vulputate lorem neque lorem ipsum dolor.
+            The best way to reach Alex is by email, but she's also available by phone or ask for her by name from her colleagues at <a href="https://www.epperlytravel.com/">Epperly Travel</a>. Fill out your info below and Alex will get back to you!
           </p>
           <div className="row">
             <div className="8u 12u$(small)">
@@ -102,7 +98,7 @@ const HomeIndex = () => {
               <ul className="labeled-icons">
                 <li>
                   <h3 className="icon fa-home">
-                    <span className="label">Address</span>
+                    <span className="label">Epperly Travel</span>
                   </h3>
                   1234 Somewhere Rd.
                   <br />
@@ -114,13 +110,13 @@ const HomeIndex = () => {
                   <h3 className="icon fa-mobile">
                     <span className="label">Phone</span>
                   </h3>
-                  000-000-0000
+                  <a href="tel:678-358-5759">678-358-5759</a>
                 </li>
                 <li>
                   <h3 className="icon fa-envelope-o">
                     <span className="label">Email</span>
                   </h3>
-                  <a href="#">hello@untitled.tld</a>
+                  <a href="mailto:alex@epperlytravel.com">alex@epperlytravel.com</a>
                 </li>
               </ul>
             </div>
@@ -131,4 +127,4 @@ const HomeIndex = () => {
   )
 }
 
-export default HomeIndex
+export default HomeIndex;
