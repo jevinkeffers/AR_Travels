@@ -24,13 +24,13 @@ const GalleryItem = ({id, source, thumbnail, caption, description, position, tog
 
 GalleryItem.displayName = 'GalleryItem'
 GalleryItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  source: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
-  caption: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  position: PropTypes.string.isRequired,
-  toggleLightbox: PropTypes.func.isRequired
+    id: PropTypes.string.isRequired,
+    source: PropTypes.string.isRequired,
+    thumbnail: PropTypes.string.isRequired,
+    caption: PropTypes.string.isRequired,
+    description: PropTypes.string.isRequired,
+    position: PropTypes.string.isRequired,
+    toggleLightbox: PropTypes.func.isRequired
 }
 
 export default GalleryItem

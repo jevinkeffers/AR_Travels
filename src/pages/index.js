@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import Helmet from 'react-helmet';
 import Gallery from '../components/Gallery';
 import Layout from '../components/layout';
+import Form from '../components/contactForm';
 
 const HomeIndex = () => {
   const siteTitle = 'Alex Raymond Travels';
@@ -16,20 +17,18 @@ const HomeIndex = () => {
       </Helmet>
 
       <div id="main">
-        <section id="one">
+        <section id="about">
           <header className="major">
             <h2>
-            Guiding the globally curious with curated itineraries and bespoke experiences.
+              About Your Travel Advisor
             </h2>
           </header>
-          <p>
-            Accumsan orci faucibus id eu lorem semper. Eu ac iaculis ac nunc
-            nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae
-            lobortis tortor primis integer massa adipiscing id nisi accumsan
-            pellentesque commodo blandit enim arcu non at amet id arcu magna.
-            Accumsan orci faucibus id eu lorem semper nunc nisi lorem vulputate
-            lorem neque cubilia
-          </p>
+            <p>
+              Alex Raymond is a Travel Advisor with <a href="https://www.epperlytravel.com/">Epperly Travel</a>, a boutique agency and member of the Virtuoso Network dedicated to providing a modern approach to travel planning.
+            </p>
+            <p>
+              Travel will always tell a story. As one of the purest forms of transformation, it provides wishful thinking, imagination, new experiences and new tastes. Whether you’re looking to step outside your comfort zone, embark on a romantic getaway or just hit pause on your fast-paced life, I create tailor-made vacations that can have an outlook-altering effect perfectly curated to your specific personality. With a background in public relations and client service, I understand the importance of building that unique relationship and really listening to the finest details of your tastes and interests in an effort to give you the most substantive and enriching experience any destination has to offer. Travel is a gift, now more than ever, and sharing in the planning of trips that inspire others to embrace the unknown and seek adventure whenever possible will always be my passion.
+            </p>
           <ul className="actions">
             <li>
               <Link to="/contact" className="button">
@@ -39,9 +38,48 @@ const HomeIndex = () => {
           </ul>
         </section>
 
-        <section id="two">
-          <h2>From Alex's Newsletter</h2>
 
+        <section id="process">
+          <header className="major">
+            <h2>
+            The Process
+            </h2>
+          </header>
+          <p>
+            Planning and booking the trip is half the journey, and one that should be enjoyable and stress free. That’s where a trusted advisor comes in. Research takes precious time and, with the information overload you will undoubtedly find scouring the internet, planning a vacation can become completely overwhelming. Whether you’re looking to hot air balloon over sprawling vineyards, check the Great Wall of China off your bucket list or simply stroll the cobblestone streets of Saint Germain, I will work with you on a service-based approach resulting in a completely personalized getaway.
+          </p>
+          <ul>
+            <li>
+              The possibilities are endless, so let’s discover where you want to explore. I want to get to know you in a way that allows me to match you to the perfect destination, if you’re still undecided, or start sharing in the excitement of the idea you have been endlessly dreaming about. Once you paint the picture and we discuss all the possibilities, only then do you begin paying for the service. Services start at $100 per trip.
+            </li>
+            <li>
+              We will work together to turn that idle wanderlust into a fully crafted itinerary while collaborating with top travel partners around the globe like hoteliers, tour operators and luxury cruise lines.
+            </li>
+            <li>
+              You will review a final proposal of travel plans, from bookings and logistics to recommendations in the area. From there, you’ll provide feedback and after all your boxes are checked, the reservations can begin! Once confirmed, I provide all the necessary travel documents covering your unforgettable escape, so you can sit back and enjoy the anticipation that comes along with a fully booked vacation.
+            </li>
+            <li>
+              Before departure, during travel and as you settle back home, I will serve as your advocate every step of the way. This means connecting with the suppliers on the ground to make sure your stay is extra special and VIP while adding value wherever possible and helping you navigate any unforeseen challenges.
+            </li>
+          </ul>
+          <ul className="actions">
+            <li>
+              <Link to="/contact" className="button">
+                Start planning now!
+              </Link>
+            </li>
+          </ul>
+        </section>
+
+        <section id="blog">
+          <h2>From Alex's Newsletter</h2>
+          <ul className="actions">
+            <li>
+              <Link to="/blog" className="button">
+                Subscribe!
+              </Link>
+            </li>
+          </ul>
           <Gallery />
 
           <ul className="actions">
@@ -56,47 +94,14 @@ const HomeIndex = () => {
         <section id="three">
           <h2>Get In Touch!</h2>
           <p>
-            The best way to reach Alex is by email, but she's also available by phone or ask for her by name from her colleagues at <a href="https://www.epperlytravel.com/">Epperly Travel</a>. Fill out your info below and Alex will get back to you!
+            Fill out your info below, and soon we'll start planning your dream vacation!
           </p>
-          <div className="row">
-            <div className="8u 12u$(small)">
-              <form method="post" action="#">
-                <div className="row uniform 50%">
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div className="6u 12u$(xsmall)">
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div className="12u">
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                      rows="4"
-                    ></textarea>
-                  </div>
-                </div>
-                <ul className="actions" style={{ marginTop: 30 }}>
-                  <li>
-                    <input type="submit" value="Send Message" />
-                  </li>
-                </ul>
-              </form>
-            </div>
+          <form>
+            <Form />
+          </form>
             <div className="4u 12u$(small)">
               <ul className="labeled-icons">
-                <li>
+                {/* <li>
                   <h3 className="icon fa-home">
                     <span className="label">Epperly Travel</span>
                   </h3>
@@ -105,7 +110,7 @@ const HomeIndex = () => {
                   Nashville, TN 00000
                   <br />
                   United States
-                </li>
+                </li> */}
                 <li>
                   <h3 className="icon fa-mobile">
                     <span className="label">Phone</span>
@@ -120,7 +125,6 @@ const HomeIndex = () => {
                 </li>
               </ul>
             </div>
-          </div>
         </section>
       </div>
     </Layout>
