@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter - Strata by HTML5 UP',
-    author: 'Hunter Chang',
-    description: 'A Gatsby.js Starter based on Strata by HTML5 UP',
+    title: 'Atlex Raymond Travels',
+    author: 'Kevin Jeffers',
+    description: 'Alex Raymond is a travel advisor based out of Atlanta, Ga.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

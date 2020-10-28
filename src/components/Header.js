@@ -9,13 +9,13 @@ const Header = () => (
       <a href="#" className="image avatar">
         <img src={avatar} alt="Alex Raymond Travels" />
       </a>
-      <h1>
+      <h2>
         <strong>Guiding the globally curious with curated itineraries and bespoke experiences.</strong>
-      </h1>
+      </h2>
 
       <ul className="actions">
           <li>
-            <Link to="/contact" className="button-main">
+            <Link to="/contact" className="button">
               Start planning now!
             </Link>
           </li>
