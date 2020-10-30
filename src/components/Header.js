@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'gatsby';
-import Footer from './Footer'
-import avatar from '../assets/images/ART-logo1.png'
+import Footer from './Footer';
+import avatar from '../assets/images/ART-logo1.png';
 
 const Header = () => (
   <header id="header">
@@ -15,7 +15,7 @@ const Header = () => (
 
       <ul className="actions">
           <li>
-            <Link to="/contact" className="button">
+            <Link to="/contact" className="btn-header">
               Start planning now!
             </Link>
           </li>
@@ -31,11 +31,11 @@ const Header = () => (
             <span className="label">Facebook</span>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="https://www.epperlytravel.com/" target="blank" className="icon fa-suitcase">
             <span className="label">Epperly Travel</span>
           </a>
-        </li>
+        </li> */}
         <li>
           <a href="mailto:alex@epperlytravel.com" className="icon fa-envelope-o">
             <span className="label">Email</span>

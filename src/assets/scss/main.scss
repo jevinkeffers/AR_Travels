@@ -207,10 +207,11 @@
 
 	header {
 		p {
-			color: _palette(fg-light);
+			color: #fff;
 			position: relative;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
 		}
+		
 
 		h2 + p {
 			font-size: 1.25em;
@@ -435,6 +436,7 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		color: #fff;
 
 		> .label {
 			display: none;
@@ -794,13 +796,14 @@
 	input[type="submit"],
 	input[type="reset"],
 	input[type="button"],
+	button,
 	.button {
 		@include vendor('appearance', 'none');
 		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-		background-color: _palette(accent1, bg) ;
+		background-color: #cc9999;
 		border-radius: _size(border-radius);
-		border: solid 3px _palette(bg);
-		color: #fff !important;
+		border: solid 3px _palette(border);
+		color: #fff;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: _font(weight-bold);
@@ -812,16 +815,20 @@
 		text-align: center;
 		text-decoration: none;
 		white-space: nowrap;
+		box-shadow: 1px 1px 2px gray;
 
 		&:hover {
-			border-color: _palette(bg);
-			color: _palette(bg) !important;
+			color: #cc9999 !important;
+			border-color: #cc9999;
+			background-color: (rgba(255,255,255,0.5));
+			text-shadow: none;
+		
 		}
 
 		&:active {
-			background-color: transparentize(_palette(accent1, bg), 0.9);
-			border-color: _palette(accent1, bg);
-			color: _palette(accent1, bg) !important;
+			border-color: #cc9999;
+			background-color: white;
+			color: #cc9999;
 		}
 
 		&.icon {
@@ -848,107 +855,115 @@
 		}
 
 		&.special {
-			background-color: _palette(accent1, bg);
-			border-color: _palette(accent1, bg);
-			color: _palette(accent1, fg-bold) !important;
+			border-color: #cc9999;
+			background-color: white;
+			color: #cc9999;
 
 			&:hover {
-				background-color: lighten(_palette(accent1, bg), 5);
-				border-color: lighten(_palette(accent1, bg), 5);
+				border-color: #cc9999;
+				background-color: white;
+				color: #cc9999;
 			}
 
 			&:active {
-				background-color: darken(_palette(accent1, bg), 5);
-				border-color: darken(_palette(accent1, bg), 5);
+				border-color: #cc9999;
+				background-color: white;
+				color: #cc9999;
 			}
 		}
 
-		&.disabled,
-		&:disabled {
-			background-color: _palette(border2-bg) !important;
-			border-color: _palette(border2-bg) !important;
-			color: _palette(fg-light) !important;
-			cursor: default;
-		}
+		// &.disabled,
+		// &:disabled {
+		// 	border-color: #cc9999;
+		// 	background-color: white;
+		// 	color: #cc9999;
+		// 	cursor: default;
+		// }
 	}
 
-	// .button-main {
-	// 	@include vendor('appearance', 'none');
-	// 	@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
-	// 	background-color: transparent;
-	// 	border-radius: _size(border-radius);
-	// 	border: solid 3px _palette(border);
-	// 	color: _palette(fg-bold) !important;
-	// 	cursor: pointer;
-	// 	display: inline-block;
-	// 	font-weight: _font(weight-bold);
-	// 	height: 3.15em;
-	// 	height: calc(2.75em + 6px);
-	// 	line-height: 2.75em;
-	// 	min-width: 10em;
-	// 	padding: 0 1.5em;
-	// 	text-align: center;
-	// 	text-decoration: none;
-	// 	white-space: nowrap;
+	.btn-header {
+		@include vendor('appearance', 'none');
+		@include vendor('transition', ('background-color #{_duration(transition)} ease-in-out', 'color #{_duration(transition)} ease-in-out', 'border-color #{_duration(transition)} ease-in-out'));
+		background-color: #cc9999;
+		border-radius: _size(border-radius);
+		border: solid 3px _palette(border);
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		font-weight: _font(weight-bold);
+		height: 3.15em;
+		height: calc(2.75em + 6px);
+		line-height: 2.75em;
+		min-width: 10em;
+		padding: 0 1.5em;
+		text-align: center;
+		text-decoration: none;
+		white-space: nowrap;
+		box-shadow: 1px 1px 2px gray;
 
-	// 	&:hover {
-	// 		border-color: _palette(accent1, bg);
-	// 		color: _palette(accent1, bg) !important;
-	// 	}
+		&:hover {
+			color: #cc9999 !important;
+			border-color: #cc9999;
+			background-color: (rgba(255,255,255,0.5));
+			text-shadow: none;
+		
+		}
 
-	// 	&:active {
-	// 		background-color: transparentize(_palette(accent1, bg), 0.9);
-	// 		border-color: _palette(accent1, bg);
-	// 		color: _palette(accent1, bg) !important;
-	// 	}
+		&:active {
+			border-color: #cc9999;
+			background-color: white;
+			color: #cc9999;
+		}
 
-	// 	&.icon {
-	// 		padding-left: 1.35em;
+		&.icon {
+			padding-left: 1.35em;
 
-	// 		&:before {
-	// 			margin-right: 0.5em;
-	// 		}
-	// 	}
+			&:before {
+				margin-right: 0.5em;
+			}
+		}
 
-	// 	&.fit {
-	// 		display: block;
-	// 		margin: 0 0 (_size(element-margin) * 0.5) 0;
-	// 		min-width: 0;
-	// 		width: 100%;
-	// 	}
+		&.fit {
+			display: block;
+			margin: 0 0 (_size(element-margin) * 0.5) 0;
+			min-width: 0;
+			width: 100%;
+		}
 
-	// 	&.small {
-	// 		font-size: 0.8em;
-	// 	}
+		&.small {
+			font-size: 0.8em;
+		}
 
-	// 	&.big {
-	// 		font-size: 1.35em;
-	// 	}
+		&.big {
+			font-size: 1.35em;
+		}
 
-	// 	&.special {
-	// 		background-color: _palette(accent1, bg);
-	// 		border-color: _palette(accent1, bg);
-	// 		color: _palette(accent1, fg-bold) !important;
+		&.special {
+			border-color: #cc9999;
+			background-color: white;
+			color: #cc9999;
 
-	// 		&:hover {
-	// 			background-color: lighten(_palette(accent1, bg), 5);
-	// 			border-color: lighten(_palette(accent1, bg), 5);
-	// 		}
+			&:hover {
+				border-color: #cc9999;
+				background-color: white;
+				color: #cc9999;
+			}
 
-	// 		&:active {
-	// 			background-color: darken(_palette(accent1, bg), 5);
-	// 			border-color: darken(_palette(accent1, bg), 5);
-	// 		}
-	// 	}
+			&:active {
+				border-color: #cc9999;
+				background-color: white;
+				color: #cc9999;
+			}
+		}
 
-	// 	&.disabled,
-	// 	&:disabled {
-	// 		background-color: _palette(border2-bg) !important;
-	// 		border-color: _palette(border2-bg) !important;
-	// 		color: _palette(fg-light) !important;
-	// 		cursor: default;
-	// 	}
-	// }
+		// &.disabled,
+		// &:disabled {
+		// 	border-color: #cc9999;
+		// 	background-color: white;
+		// 	color: #cc9999;
+		// 	cursor: default;
+		// }
+	}
 	
 
 
@@ -1011,15 +1026,17 @@
 
 		> .inner {
 			@include vendor('flex-grow', '1');
-			margin: 0 0 ($size-header-pad * 0.5) 0;
+			margin: 0 0 ($size-header-pad * 0.2) 0;
 		}
-
+		
 		strong, b {
 			color: _palette(accent2, fg-bold);
 		}
 
 		h2, h3, h4, h5, h6 {
 			color: _palette(accent2, fg-bold);
+			text-shadow: 1px 1px 2px gray ;
+
 		}
 
 		h1 {
@@ -1038,37 +1055,32 @@
 /* Footer */
 
 	#footer {
-		.icons {
-			margin: (_size(element-margin) * 0.5) 0 0 0;
-
-			a {
-				color: _palette(accent2, fg-light);
-			}
-		}
 
 		.copyright {
-			color: _palette(accent2, fg-light);
-			font-size: 0.8em;
+			color: #fff;
+			font-size: 0.7em;
 			list-style: none;
-			margin: (_size(element-margin) * 0.5) 0 0 0;
 			padding: 0;
 
-			li {
-				border-left: solid 1px _palette(accent2, border);
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
+		a, a:hover {
+			color: #fff;
+			text-decoration: none;
+		}
 
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
+		p {
+			display: inline-block;
+			line-height: 1em;
+			margin-left: 0.75em;
+			padding-left: 0.75em;
+			padding-bottom: 0;
 
-				a {
-					color: inherit;
-				}
+			&:first-child {
+				border-left: 0;
+				margin-left: 0;
+				padding-left: 0;
+			}
+
+				
 			}
 		}
 	}
@@ -1306,10 +1318,10 @@
 
 			#footer {
 				.copyright {
-					li {
+					p {
 						border-left-width: 0;
 						display: block;
-						line-height: 2.25em;
+						line-height: 1.5em;
 						margin-left: 0;
 						padding-left: 0;
 					}
@@ -1360,7 +1372,7 @@
 				background-position:	top left,	center center;
 				background-size:		auto,		cover;
 				left: auto;
-				padding: ($size-header-pad * 1.5) $size-header-pad;
+				padding: ($size-header-pad * 1.5) $size-header-pad 0;
 				position: relative;
 				text-align: center;
 				top: auto;
@@ -1381,22 +1393,21 @@
 			#footer {
 				bottom: auto;
 				left: auto;
-				padding: $size-header-pad $size-header-pad ($size-header-pad * 1.5) $size-header-pad;
 				position: relative;
 				text-align: center;
 				width: 100%;
 
-				.icons {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-				}
+				// .icons {
+				// 	margin: 0 0 (_size(element-margin) * 0.5) 0;
+				// }
 
 				.copyright {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
+					margin: 0;
 
-					li {
+					p {
 						border-left-width: 1px;
 						display: inline-block;
-						line-height: 1em;
+						line-height: 1.5em;
 						margin-left: 0.75em;
 						padding-left: 0.75em;
 					}
@@ -1475,9 +1486,9 @@
 
 		/* Footer */
 
-			#footer {
-				padding: ($size-header-pad * 1.5) $size-header-pad;
-			}
+			// #footer {
+			// 	padding: ($size-header-pad * 1.5) $size-header-pad;
+			// }
 
 		/* Main */
 
@@ -1529,7 +1540,7 @@
 
 						> * {
 							margin: 0 !important;
-							width: 100%;
+
 
 							&.icon {
 								&:before {

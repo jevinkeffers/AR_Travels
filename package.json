@@ -1,14 +1,17 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "alex-raymond-travels",
+  "description": "Alex Raymond, Travel Advisor based in Atlanta, Ga.",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Kevin Jeffers",
   "dependencies": {
+    "@contentful/gatsby-transformer-contentful-richtext": "^13.1.0",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.24.87",
     "gatsby-plugin-manifest": "^2.3.3",
     "gatsby-plugin-offline": "^3.1.2",
     "gatsby-plugin-react-helmet": "^3.2.1",
     "gatsby-plugin-sass": "^2.2.1",
+    "gatsby-source-contentful": "^3.0.6",
     "node-sass": "^4.13.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -24,10 +27,15 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.js\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "devDependencies": {
-    "prettier": "^2.0.2"
+    "babel-jest": "^26.6.1",
+    "babel-preset-gatsby": "^0.5.14",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.6.1",
+    "prettier": "^2.0.2",
+    "react-test-renderer": "^17.0.1"
   },
   "repository": {
     "type": "git",

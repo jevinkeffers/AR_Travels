@@ -1,0 +1,127 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header renders correctly 1`] = `
+<header
+  id="header"
+>
+  <div
+    className="inner"
+  >
+    <a
+      className="image avatar"
+      href="#"
+    >
+      <img
+        alt="Alex Raymond Travels"
+        src="test-file-stub"
+      />
+    </a>
+    <h2>
+      <strong>
+        Guiding the globally curious with curated itineraries and bespoke experiences.
+      </strong>
+    </h2>
+    <ul
+      className="actions"
+    >
+      <li>
+        <a
+          className="button"
+          href="/contact"
+        >
+          Start planning now!
+        </a>
+      </li>
+    </ul>
+    <ul
+      className="icons"
+    >
+      <li>
+        <a
+          className="icon fa-instagram"
+          href="https://www.instagram.com/alexraymondtravels/"
+          target="blank"
+        >
+          <span
+            className="label"
+          >
+            Instagram
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          className="icon fa-facebook"
+          href="https://www.facebook.com/alexraymondtravels"
+          target="blank"
+        >
+          <span
+            className="label"
+          >
+            Facebook
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          className="icon fa-suitcase"
+          href="https://www.epperlytravel.com/"
+          target="blank"
+        >
+          <span
+            className="label"
+          >
+            Epperly Travel
+          </span>
+        </a>
+      </li>
+      <li>
+        <a
+          className="icon fa-envelope-o"
+          href="mailto:alex@epperlytravel.com"
+        >
+          <span
+            className="label"
+          >
+            Email
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    id="footer"
+  >
+    <div
+      className="inner"
+    >
+      <div
+        className="copyright"
+      >
+        <p>
+          Photo by: Alex from Bermuda. Design by: 
+          <a
+            href="http://kevinjeffers.me"
+            target="blank"
+          >
+            Kevin Jeffers
+          </a>
+           with help from 
+          <a
+            href="https://www.gatsbyjs.com/"
+            target="blank"
+          >
+            Gatsby
+          </a>
+           and 
+          <a
+            href="https://html5up.net/"
+          >
+            HTML5.
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+</header>
+`;

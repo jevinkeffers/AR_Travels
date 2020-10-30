@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Gallery from '../components/Gallery';
 import Layout from '../components/layout';
 import Form from '../components/contactForm';
+// import Alex from "../images/alex-headshot.png";
 
 const HomeIndex = () => {
   const siteTitle = 'Alex Raymond Travels';
@@ -23,11 +24,15 @@ const HomeIndex = () => {
               About Your Travel Advisor
             </h2>
           </header>
+            {/* <img src={Alex} /> */}
             <p>
-              Alex Raymond is a Travel Advisor with <a href="https://www.epperlytravel.com/">Epperly Travel</a>, a boutique agency and member of the Virtuoso Network dedicated to providing a modern approach to travel planning.
+              Alex Raymond is a Travel Advisor with <a href="https://www.epperlytravel.com/" target="_blank">Epperly Travel</a>, a boutique agency and member of the Virtuoso Network dedicated to providing a modern approach to travel planning. Travel will always tell a story. As one of the purest forms of transformation, it provides wishful thinking, imagination, new experiences and new tastes.
             </p>
             <p>
-              Travel will always tell a story. As one of the purest forms of transformation, it provides wishful thinking, imagination, new experiences and new tastes. Whether you’re looking to step outside your comfort zone, embark on a romantic getaway or just hit pause on your fast-paced life, I create tailor-made vacations that can have an outlook-altering effect perfectly curated to your specific personality. With a background in public relations and client service, I understand the importance of building that unique relationship and really listening to the finest details of your tastes and interests in an effort to give you the most substantive and enriching experience any destination has to offer. Travel is a gift, now more than ever, and sharing in the planning of trips that inspire others to embrace the unknown and seek adventure whenever possible will always be my passion.
+              Whether you’re looking to step outside your comfort zone, embark on a romantic getaway or just hit pause on your fast-paced life, I create tailor-made vacations that can have an outlook-altering effect perfectly curated to your specific personality. With a background in public relations and client service, I understand the importance of building that unique relationship and really listening to the finest details of your tastes and interests in an effort to give you the most substantive and enriching experience any destination has to offer. 
+            </p>
+            <p>
+              Travel is a gift, now more than ever, and sharing in the planning of trips that inspire others to embrace the unknown and seek adventure whenever possible will always be my passion.
             </p>
           <ul className="actions">
             <li>
